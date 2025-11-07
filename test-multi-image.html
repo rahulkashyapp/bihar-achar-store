@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Image Test</title>
+</head>
+<body>
+    <h1>Multi-Image Test</h1>
+    <button onclick="addTestProduct()">Add Test Product to localStorage</button>
+    <button onclick="goToHomepage()">Go to Homepage</button>
+    <script>
+        function addTestProduct() {
+            const testProduct = {
+                id: "test-multi-123",
+                name: "Test Multi Image Product",
+                description: "This is a test product with multiple images",
+                price: 299,
+                weight: "500g",
+                category: "Mango Pickle",
+                images: ["🥭", "🍋", "🥗"],
+                rating: 4.5,
+                reviews: 10,
+                stock: 15,
+                sku: "TEST-001",
+                status: "active"
+            };
+            
+            const existingProducts = JSON.parse(localStorage.getItem('biharAcharProducts') || '[]');
+            existingProducts.push(testProduct);
+            localStorage.setItem('biharAcharProducts', JSON.stringify(existingProducts));
+            
+            alert('Test product added! Now go to homepage to test.');
+        }
+        
+        function goToHomepage() {
+            window.open('http://localhost:3000', '_blank');
+        }
+    </script>
+</body>
+</html>

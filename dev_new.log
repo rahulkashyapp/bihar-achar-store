@@ -1,0 +1,593 @@
+
+> nextjs_tailwind_shadcn_ts@0.1.0 dev
+> nodemon --exec "npx tsx server.ts" --watch server.ts --watch src --ext ts,tsx,js,jsx 2>&1 | tee dev.log
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): server.ts src/**/*[39m
+[33m[nodemon] watching extensions: ts,tsx,js,jsx[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+ ✓ Compiled /checkout in 6.6s (905 modules)
+ GET /checkout 200 in 5301ms
+ GET / 200 in 7271ms
+ ✓ Compiled /api/products in 431ms (926 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 646ms
+ GET / 200 in 291ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling /checkout ...
+ ✓ Compiled /checkout in 5.9s (882 modules)
+ GET /checkout 200 in 6397ms
+ ○ Compiling / ...
+ ✓ Compiled / in 821ms (886 modules)
+ GET / 200 in 1158ms
+ ✓ Compiled /api/products in 414ms (907 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 607ms
+ ✓ Compiled /cart in 474ms (930 modules)
+ GET /cart 200 in 573ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 32ms
+ GET / 200 in 287ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 25ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+ ✓ Compiled / in 6.4s (902 modules)
+ GET / 200 in 6991ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 537ms (891 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 750ms
+ GET / 200 in 327ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 17ms
+ GET / 200 in 142ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 22ms
+ ○ Compiling /product/[id] ...
+ ✓ Compiled /product/[id] in 794ms (920 modules)
+ GET /product/1761735247131 200 in 1709ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 25ms
+ GET / 200 in 261ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 15ms
+ GET / 200 in 862ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 16ms
+ ○ Compiling /cart ...
+ ✓ Compiled /cart in 626ms (924 modules)
+ GET /cart 200 in 731ms
+ ✓ Compiled /api/payment/phonepe/generate-qr in 290ms (926 modules)
+ POST /api/payment/phonepe/generate-qr 200 in 336ms
+ ✓ Compiled /api/payment/phonepe/status in 231ms (928 modules)
+ GET /api/payment/phonepe/status?transactionId=TXN_1761801767985_d7fw4hr6e 200 in 266ms
+ GET / 200 in 58ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 19ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 5.6s (789 modules)
+ GET /admin 200 in 6045ms
+ ○ Compiling /admin/login ...
+ ✓ Compiled /admin/login in 662ms (792 modules)
+ GET /admin/login 200 in 761ms
+ ✓ Compiled /api/admin/verify-password in 446ms (447 modules)
+ POST /api/admin/verify-password 401 in 573ms
+ POST /api/admin/verify-password 200 in 17ms
+ ○ Compiling /admin/dashboard ...
+ ✓ Compiled /admin/dashboard in 1767ms (1022 modules)
+ GET /admin/dashboard 200 in 2151ms
+ ○ Compiling /admin/settings ...
+ ✓ Compiled /admin/settings in 547ms (1041 modules)
+ GET /admin/settings 200 in 662ms
+ GET /admin/settings 200 in 17ms
+ GET /admin/dashboard 200 in 171ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+ ✓ Compiled / in 5.9s (902 modules)
+ GET / 200 in 6477ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 528ms (891 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 735ms
+ GET / 200 in 295ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 26ms
+ ○ Compiling /product/[id] ...
+ ✓ Compiled /product/[id] in 744ms (920 modules)
+ GET /product/1761735247131 200 in 1714ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 43ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 15ms
+ ✓ Compiled /cart in 395ms (931 modules)
+ GET /cart 200 in 452ms
+ ✓ Compiled /api/payment/phonepe/generate-qr in 261ms (933 modules)
+ POST /api/payment/phonepe/generate-qr 200 in 289ms
+ ✓ Compiled /api/payment/phonepe/status in 239ms (935 modules)
+ GET /api/payment/phonepe/status?transactionId=TXN_1761802566621_3y2ng7hqv 200 in 266ms
+ GET /api/payment/phonepe/status?transactionId=TXN_1761802566621_3y2ng7hqv 200 in 7ms
+ GET / 200 in 47ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 18ms
+ GET / 200 in 291ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 18ms
+ GET / 200 in 152ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 20ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+ ✓ Compiled / in 6.4s (902 modules)
+ GET / 200 in 7092ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 834ms (905 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 1054ms
+ GET / 200 in 316ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 18ms
+ ○ Compiling /product/[id] ...
+ ✓ Compiled /product/[id] in 820ms (885 modules)
+ GET /product/1761735247131 200 in 1817ms
+ GET /product/1761735247131 200 in 28ms
+ ✓ Compiled /api/products in 136ms (510 modules)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 260ms
+ ✓ Compiled /api/payment/phonepe/generate-qr in 211ms (907 modules)
+ POST /api/payment/phonepe/generate-qr 200 in 241ms
+ ✓ Compiled /api/payment/phonepe/status in 216ms (909 modules)
+ GET /api/payment/phonepe/status?transactionId=TXN_1761802905042_by65eeosj 200 in 243ms
+ ○ Compiling / ...
+ ✓ Compiled / in 529ms (529 modules)
+ GET / 200 in 613ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 21ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+ ✓ Compiled / in 5.6s (902 modules)
+ GET / 200 in 6157ms
+ GET / 200 in 142ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 510ms (891 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 713ms
+ GET / 200 in 289ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 29ms
+ GET / 200 in 166ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 19ms
+ ○ Compiling /product/[id] ...
+ ✓ Compiled /product/[id] in 662ms (920 modules)
+ GET /product/1761734341554 200 in 1566ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 25ms
+ ✓ Compiled /cart in 370ms (931 modules)
+ GET /cart 200 in 429ms
+ GET / 200 in 253ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 24ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+ ✓ Compiled / in 6.7s (902 modules)
+ GET / 200 in 1251ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 664ms (891 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 862ms
+ GET / 200 in 318ms
+ GET /api/products 200 in 23ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET / 200 in 144ms
+ GET / 200 in 130ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 23ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 30ms
+ ○ Compiling /product/[id] ...
+ ✓ Compiled /product/[id] in 642ms (920 modules)
+ GET /product/1761730371380 200 in 1556ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 29ms
+ ✓ Compiled /cart in 398ms (931 modules)
+ GET /cart 200 in 452ms
+ ○ Compiling /checkout ...
+ ✓ Compiled /checkout in 750ms (882 modules)
+ GET /checkout 200 in 1071ms
+ ✓ Compiled / in 413ms (504 modules)
+ GET / 200 in 729ms
+ ✓ Compiled /api/products in 242ms (524 modules)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 382ms
+ GET / 200 in 300ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 17ms
+ GET / 200 in 147ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 18ms
+ ✓ Compiled /product/[id] in 242ms (536 modules)
+ GET /product/1761735247131 200 in 377ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 22ms
+ GET / 200 in 228ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 103ms
+ GET /product/1761734341554 200 in 30ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 19ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 17ms
+ GET / 200 in 156ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 16ms
+ GET / 200 in 150ms
+ GET / 200 in 122ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 20ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 20ms
+ GET / 200 in 15ms
+ GET /product/test-multi-direct-1761761738747 200 in 29ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 13ms
+ ○ Compiling /api/payment/phonepe/generate-qr ...
+ ✓ Compiled /api/payment/phonepe/generate-qr in 528ms (934 modules)
+ POST /api/payment/phonepe/generate-qr 200 in 573ms
+ ✓ Compiled /api/payment/phonepe/status in 254ms (936 modules)
+ GET /api/payment/phonepe/status?transactionId=TXN_1761803453225_pn7birtr1 200 in 301ms
+ ✓ Compiled /cart in 400ms (536 modules)
+ GET /cart 200 in 487ms
+ GET /api/payment/phonepe/status?transactionId=TXN_1761803453225_pn7birtr1 200 in 13ms
+ GET / 200 in 22ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 16ms
+ GET /cart 200 in 30ms
+ GET / 200 in 13ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 22ms
+ GET / 200 in 281ms
+ GET / 200 in 156ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 18ms
+ GET /product/1761730371380 200 in 39ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 21ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 22ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling /product/[id] ...
+ ✓ Compiled /product/[id] in 5.7s (904 modules)
+ GET /product/1761712532108 200 in 2756ms
+ GET /product/1761712532108 200 in 7137ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 754ms (893 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 943ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 21ms
+ ✓ Compiled / in 467ms (920 modules)
+ GET / 200 in 858ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 24ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+ ✓ Compiled /checkout in 6.9s (897 modules)
+ GET /checkout 200 in 3534ms
+ GET / 200 in 3030ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 504ms (918 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 754ms
+ GET / 200 in 304ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 18ms
+ GET / 200 in 143ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 15ms
+ GET / 200 in 142ms
+ ✓ Compiled /favicon.ico in 166ms (526 modules)
+ GET /favicon.ico 200 in 214ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 66ms
+ ✓ Compiled /product/[id] in 445ms (941 modules)
+ GET /product/1761735247131 200 in 1348ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 20ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 594ms (956 modules)
+ GET /about 200 in 658ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 1243ms (971 modules)
+ GET /contact 200 in 1302ms
+ GET / 200 in 33ms
+ GET /api/products 200 in 26ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /product/1761711942413 200 in 42ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 17ms
+ ○ Compiling /cart ...
+ ✓ Compiled /cart in 532ms (974 modules)
+ GET /cart 200 in 636ms
+ GET /cart 200 in 17ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling /cart ...
+ ✓ Compiled /cart in 5.4s (870 modules)
+ GET /cart 200 in 5820ms
+ GET /cart 200 in 52ms
+ GET /cart 200 in 42ms
+ ○ Compiling / ...
+ ✓ Compiled / in 720ms (885 modules)
+ GET / 200 in 1037ms
+ GET /cart 200 in 51ms
+ GET /cart 200 in 61ms
+ GET /cart 200 in 49ms
+ GET /cart 200 in 56ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+ ✓ Compiled /cart in 6.9s (885 modules)
+ GET /cart 200 in 3132ms
+ GET /cart 200 in 6711ms
+ GET / 200 in 2972ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 535ms (906 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 721ms
+ GET /cart 200 in 181ms
+ GET /cart 200 in 39ms
+ GET / 200 in 181ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 20ms
+ GET /cart 200 in 49ms
+ GET /cart 200 in 55ms
+ GET / 200 in 161ms
+ GET /cart 200 in 46ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 18ms
+ GET / 200 in 117ms
+ GET /cart 200 in 57ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 18ms
+ GET / 200 in 120ms
+ GET /cart 200 in 33ms
+ GET / 200 in 123ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 16ms
+ GET /cart 200 in 19ms
+ GET / 200 in 16ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 15ms
+ ○ Compiling /product/[id] ...
+ ✓ Compiled /product/[id] in 820ms (931 modules)
+ GET /product/1761735247131 200 in 1740ms
+ GET /api/products 200 in 32ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET / 200 in 279ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 18ms
+ GET /product/1761730371380 200 in 37ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 16ms
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 16ms
+ GET /cart 200 in 23ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling /api/products ...
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+> Ready on http://127.0.0.1:3000
+> Socket.IO server running at ws://127.0.0.1:3000/api/socketio
+ ○ Compiling / ...
+ ✓ Compiled / in 5.7s (902 modules)
+ GET / 200 in 6276ms
+ GET / 200 in 163ms
+ GET / 200 in 152ms
+ ✓ Compiled /favicon.ico in 396ms (505 modules)
+ GET /favicon.ico 200 in 531ms
+ GET / 200 in 302ms
+ GET / 200 in 149ms
+ ✓ Compiled /api/products in 358ms (893 modules)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`description`, `main`.`Product`.`price`, `main`.`Product`.`weight`, `main`.`Product`.`category`, `main`.`Product`.`imageUrl`, `main`.`Product`.`images`, `main`.`Product`.`ingredients`, `main`.`Product`.`shelfLife`, `main`.`Product`.`stock`, `main`.`Product`.`featured`, `main`.`Product`.`createdAt`, `main`.`Product`.`updatedAt`, `main`.`Product`.`categoryId` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/products 200 in 499ms
+ ⚠ Cross origin request detected from preview-chat-fb459413-d360-4f21-a151-62793790d222.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 342ms

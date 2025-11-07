@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fix Product Images</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        button { background: #dc2626; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        button:hover { background: #b91c1c; }
+        .log { background: #f3f4f6; padding: 10px; margin: 10px 0; border-radius: 5px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>Fix Product Images</h1>
+    <p>This will update the database with images from localStorage products.</p>
+    <button onclick="fixImages()">Fix Images Now</button>
+    <div id="log"></div>
+
+    <script>
+        function log(message) {
+            const logDiv = document.getElementById('log');
+            logDiv.innerHTML += '<div class="log">' + message + '</div>';
+        }
+
+        async function fixImages() {
+            try {
+                log('Getting products from localStorage...');
+                
+                const savedProducts = localStorage.getItem('biharAcharProducts');
+                if (!savedProducts) {
+                    log('ERROR: No products found in localStorage!');
+                    return;
+                }
+                
+                const products = JSON.parse(savedProducts);
+                log(`Found ${products.length} products in localStorage`);
+                
+                // Show products with images
+                products.forEach((product, index) => {
+                    const hasImages = product.images && product.images.length > 0;
+                    const hasImage = product.image;
+                    const hasImageUrl = product.imageUrl;
+                    
+                    log(`Product ${index + 1}: ${product.name}`);
+                    log(`  - Images array: ${hasImages ? product.images.length + ' items' : 'none'}`);
+                    log(`  - Single image: ${hasImage ? 'yes' : 'no'}`);
+                    log(`  - ImageUrl: ${hasImageUrl ? 'yes' : 'no'}`);
+                    
+                    if (hasImages) {
+                        product.images.forEach((img, i) => {
+                            log(`    Image ${i + 1}: ${img.substring(0, 80)}...`);
+                        });
+                    }
+                });
+                
+                log('Sending products to fix-images API...');
+                
+                const response = await fetch('/api/admin/fix-images', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ products })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    log(`SUCCESS: Updated ${result.data.updatedCount} products with images!`);
+                    log('Please refresh your product pages to see the images.');
+                } else {
+                    log('ERROR: ' + result.error);
+                }
+                
+            } catch (error) {
+                log('ERROR: ' + error.message);
+            }
+        }
+    </script>
+</body>
+</html>

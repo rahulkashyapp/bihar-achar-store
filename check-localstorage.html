@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Get LocalStorage Products</title>
+</head>
+<body>
+    <h1>LocalStorage Products</h1>
+    <div id="output"></div>
+    
+    <script>
+        const savedProducts = localStorage.getItem('biharAcharProducts');
+        const output = document.getElementById('output');
+        
+        if (savedProducts) {
+            const products = JSON.parse(savedProducts);
+            output.innerHTML = '<h2>Found ' + products.length + ' products:</h2><pre>' + JSON.stringify(products, null, 2) + '</pre>';
+            
+            // Also copy to clipboard for easy use
+            navigator.clipboard.writeText(savedProducts);
+            output.innerHTML += '<p><strong>Products JSON copied to clipboard!</strong></p>';
+        } else {
+            output.innerHTML = '<p>No products found in localStorage</p>';
+        }
+    </script>
+</body>
+</html>

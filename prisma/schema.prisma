@@ -1,0 +1,118 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  password  String?
+  role      String   @default("user") // user, admin
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  orders    Order[]
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  description String?
+  image       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  products    Product[]
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  price       Float
+  weight      String   // e.g., "500g", "1kg"
+  category    String
+  imageUrl    String?
+  images      String?  // JSON array of image URLs
+  ingredients String?
+  shelfLife   String?  // e.g., "6 months"
+  stock       Int      @default(0)
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  categoryId  String?
+  categoryRel Category? @relation(fields: [categoryId], references: [id])
+  
+  orderItems  OrderItem[]
+  reviews     Review[]
+}
+
+model Order {
+  id               String   @id @default(cuid())
+  customerName     String
+  customerEmail    String?
+  customerPhone    String
+  customerAddress  String
+  customerCity     String
+  customerState    String
+  customerPincode  String
+  totalAmount      Float
+  paymentStatus    String   @default("pending") // pending, paid, failed
+  paymentScreenshot String?
+  status           String   @default("pending") // pending, packed, shipped, delivered, cancelled
+  notes            String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  
+  userId           String?
+  user             User?    @relation(fields: [userId], references: [id])
+  
+  orderItems       OrderItem[]
+}
+
+model OrderItem {
+  id        String   @id @default(cuid())
+  quantity  Int
+  price     Float
+  createdAt DateTime @default(now())
+  
+  orderId   String
+  order     Order    @relation(fields: [orderId], references: [id])
+  
+  productId String
+  product   Product  @relation(fields: [productId], references: [id])
+}
+
+model Settings {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  value       String?
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Review {
+  id           String   @id @default(cuid())
+  customerName String
+  rating       Int      // 1-5 stars
+  comment      String
+  status       String   @default("approved") // pending, approved, rejected
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  
+  productId    String
+  product      Product  @relation(fields: [productId], references: [id])
+}

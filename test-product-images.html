@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Multiple Images</title>
+    <script>
+        // Add a test product with multiple images to localStorage
+        const testProduct = {
+            id: 'test-multi-image-123',
+            name: 'Multi-Image Test Pickle',
+            description: 'This is a test product with multiple images',
+            price: 299,
+            weight: '500g',
+            images: ['🥭', '🍋', '🥗', '🌶️'],
+            rating: 4.5,
+            reviews: 0,
+            stock: 80,
+            category: 'Lemon Pickle',
+            sku: 'SKU-1761712532108',
+            status: 'active'
+        };
+
+        // Load existing products
+        let existingProducts = JSON.parse(localStorage.getItem('biharAcharProducts') || '[]');
+        
+        // Remove existing test product if it exists
+        existingProducts = existingProducts.filter(p => p.id !== 'test-multi-image-123');
+        
+        // Add the test product
+        existingProducts.push(testProduct);
+        
+        // Save to localStorage
+        localStorage.setItem('biharAcharProducts', JSON.stringify(existingProducts));
+        
+        console.log('Test product added successfully!');
+        console.log('Product ID:', testProduct.id);
+        console.log('Images:', testProduct.images);
+        console.log('Navigate to: http://localhost:3000/product/' + testProduct.id);
+        
+        // Auto-redirect after 2 seconds
+        setTimeout(() => {
+            window.location.href = '/product/' + testProduct.id;
+        }, 2000);
+    </script>
+</head>
+<body>
+    <h1>Adding test product with multiple images...</h1>
+    <p>You will be redirected automatically to the product page.</p>
+    <p>If not redirected, go to: <a href="/product/test-multi-image-123">/product/test-multi-image-123</a></p>
+</body>
+</html>

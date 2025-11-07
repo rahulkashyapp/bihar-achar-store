@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Test Product - Bihar Achar Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fef3e2;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #dc2626;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #374151;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #dc2626;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #b91c1c;
+        }
+        .success {
+            background-color: #10b981;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .preview {
+            background-color: #f3f4f6;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .preview h3 {
+            margin-top: 0;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🥭 Add Test Product</h1>
+        
+        <div id="successMessage" class="success">
+            Product added successfully! Check your e-commerce site.
+        </div>
+
+        <form id="productForm">
+            <div class="form-group">
+                <label for="name">Product Name:</label>
+                <input type="text" id="name" value="Multi-Image Test Pickle" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" rows="3" required>A delicious test pickle with multiple images for demonstration.</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price (₹):</label>
+                <input type="number" id="price" value="299" required>
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Weight:</label>
+                <input type="text" id="weight" value="500gm" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <input type="text" id="category" value="Test Pickle" required>
+            </div>
+
+            <div class="form-group">
+                <label for="stock">Stock:</label>
+                <input type="number" id="stock" value="50" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sku">SKU:</label>
+                <input type="text" id="sku" value="TEST-001" required>
+            </div>
+
+            <div class="form-group">
+                <label for="images">Images (JSON array - use emojis or URLs):</label>
+                <textarea id="images" rows="3" required>["🥭", "🍋", "🥗"]</textarea>
+                <small>Format: ["image1", "image2", "image3"] - Can be emojis or URLs</small>
+            </div>
+
+            <button type="submit">Add Product</button>
+        </form>
+
+        <div class="preview">
+            <h3>Preview:</h3>
+            <div id="previewContent">
+                <p><strong>Name:</strong> <span id="previewName">Multi-Image Test Pickle</span></p>
+                <p><strong>Price:</strong> ₹<span id="previewPrice">299</span></p>
+                <p><strong>Images:</strong> <span id="previewImages">🥭, 🍋, 🥗</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Update preview in real-time
+        document.getElementById('name').addEventListener('input', updatePreview);
+        document.getElementById('price').addEventListener('input', updatePreview);
+        document.getElementById('images').addEventListener('input', updatePreview);
+
+        function updatePreview() {
+            document.getElementById('previewName').textContent = document.getElementById('name').value;
+            document.getElementById('previewPrice').textContent = document.getElementById('price').value;
+            
+            try {
+                const images = JSON.parse(document.getElementById('images').value);
+                document.getElementById('previewImages').textContent = images.join(', ');
+            } catch (e) {
+                document.getElementById('previewImages').textContent = 'Invalid JSON';
+            }
+        }
+
+        // Initialize preview
+        updatePreview();
+
+        // Handle form submission
+        document.getElementById('productForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                description: document.getElementById('description').value,
+                price: parseInt(document.getElementById('price').value),
+                weight: document.getElementById('weight').value,
+                category: document.getElementById('category').value,
+                stock: parseInt(document.getElementById('stock').value),
+                sku: document.getElementById('sku').value,
+                images: JSON.parse(document.getElementById('images').value),
+                rating: 4.5,
+                reviews: 0,
+                status: 'active'
+            };
+
+            // Generate unique ID
+            formData.id = 'test_' + Date.now();
+
+            // Save to localStorage
+            let products = JSON.parse(localStorage.getItem('biharAcharProducts') || '[]');
+            products.push(formData);
+            localStorage.setItem('biharAcharProducts', JSON.stringify(products));
+
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Reset form
+            setTimeout(() => {
+                document.getElementById('productForm').reset();
+                document.getElementById('name').value = 'Multi-Image Test Pickle';
+                document.getElementById('description').value = 'A delicious test pickle with multiple images for demonstration.';
+                document.getElementById('price').value = '299';
+                document.getElementById('weight').value = '500gm';
+                document.getElementById('category').value = 'Test Pickle';
+                document.getElementById('stock').value = '50';
+                document.getElementById('sku').value = 'TEST-001';
+                document.getElementById('images').value = '["🥭", "🍋", "🥗"]';
+                updatePreview();
+                document.getElementById('successMessage').style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

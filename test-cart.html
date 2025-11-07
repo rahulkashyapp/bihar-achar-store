@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Cart</title>
+</head>
+<body>
+    <h1>Testing Cart Functionality</h1>
+    <script>
+        // Add a test product to localStorage
+        const testCart = [{
+            id: 'test-123',
+            name: 'Test Mango Pickle',
+            price: 299,
+            quantity: 1,
+            weight: '500gm',
+            image: '🥭'
+        }];
+        localStorage.setItem('biharAcharCart', JSON.stringify(testCart));
+        
+        // Redirect to cart page
+        window.location.href = 'http://localhost:3000/cart';
+    </script>
+</body>
+</html>
